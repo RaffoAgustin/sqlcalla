@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+body {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(10,10%);
+    background: linear-gradient(90deg,
+     #05583a,
+     #6fc9d4,
+     #becdee,
+     #6dd6c6,
+     #b9dfdf,
+     #c45c16,
+     #aac5cf,
+     #84adb3,
+     #b9dddf);
+     background-size: 200% 200%;
+     animation: gradientAnimation 10s ease-in-out infinite;
+}
+
+
+
+
+.formulario{
+    display: block;
+    justify-content: center;
+    background-color: rgb(130, 221, 243);
+    
+    grid-column: 5/8;
+    grid-row: 2/10;
+    border-radius: 10px;
+
+    
+}
+
+.formulario .enviar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8%;
+    margin-left: 12%;
+
+}
+
+.formulario .borrar{
+    margin-top: 18px;
+    margin-left: 12%;
+
+}
+.formulario .borrar button:hover{
+    background-color: rgb(147, 177, 189);
+}
+
+.formulario .enviar input{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formulario .borrar input{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.formulario .enviar button{
+    cursor: pointer;
+    background-color: rgb(196, 235, 250);
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+    display: block;
+    margin-left: 30%;
+    color: black;
+
+}
+.formulario .enviar button:hover{
+    background-color: rgb(147, 177, 189);
+}
+
+.formulario .borrar button{
+    cursor: pointer;
+    background-color: rgb(196, 235, 250);
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+    display: block;
+    margin-left: 30%;
+    color: black;
+
+}
+
+
